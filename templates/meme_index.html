@@ -1,0 +1,89 @@
+<html>
+	<head>
+		<title>Meme Webtest</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<style>
+			body {
+				background-color: rgb(16, 19, 50);
+				text-align: center;
+			}
+			h1{
+				text-align: center;
+				font-family:'Times New Roman', Times, serif;
+				font-size: 4rem;
+				font-weight: 500;
+				color: aliceblue;
+			}
+			.imgMain{
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				width: 800px;
+				height: 800px;
+			}
+			.btn{
+				display: inline-block;
+				text-align: center;
+				font-family:'Times New Roman', Times, serif;
+				font-size: 2rem;
+				font-weight: 500;
+				color: aliceblue;
+				background-color: rgb(15, 96, 202);
+				margin-left: auto;
+				margin-right: auto;
+				width: 200px;
+				height: 50px;
+			}
+			a
+			{
+				position: relative;
+				display: inline-block;
+				padding: 15px 30px;
+				color: #2196f3;
+				text-transform: default;
+				letter-spacing: 4px;
+				text-decoration: none;
+				font-size: 26px;
+				overflow: hidden;
+				transition: 0.2s;
+			}
+			a:hover
+			{
+				color: #252a84;
+				background: #21adf3;
+				box-shadow: 0 0 10px #21bbf3, 0 0 40px #219ff3, 0 0 80px #21d7f3;
+			}
+			header .navbar{
+				background-color:black;
+			}
+			header .navbar ul{
+				list-style: none;
+				padding:0;
+				margin:0;
+			}
+			header .navbar ul li{
+				display: inline-block;
+				margin-right:100px;
+			}
+			header .navbar ul li a{
+				font-size: 15px;
+				text-decoration: none;
+				line-height: 72px;
+				color:#ffffff;
+				font-weight: 500;
+			}
+		</style>
+	</head>
+	<body>
+		<br>
+	<h1>Refresh to get some memes</h1>
+        <p><img src="{{meme_pic}}" class="imgMain"></p>
+		<div class="navbar">
+			<ul>
+			<li><a button onclick="window.location.reload()" class="btn"> Refresh </button></a></li>
+			</ul>
+		</div>
+</body>			
+	</header>
+</html>
