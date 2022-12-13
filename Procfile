@@ -1,1 +1,1 @@
-web: gunicorn memeApp:app
+web: gunicorn application:application
