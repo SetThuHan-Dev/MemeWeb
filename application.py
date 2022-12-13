@@ -16,4 +16,5 @@ def index():
     meme_pic,subreddit = get_meme()
     return render_template("meme_index.html", meme_pic=meme_pic, subreddit=subreddit)
 
-application.run()
+if __name__=='__main__':
+    application.run(debug=True)
